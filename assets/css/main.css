@@ -52,8 +52,9 @@ nav {
     height: 100vh;
     background-color: #ED1B24;
     color: #fff;
-    z-index: 999;
+    z-index: 9999;
     padding: 20px;
+    overflow-y: hidden;
 }
 
 .page-list ul {
@@ -121,15 +122,17 @@ nav {
 .socials {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding-left: 66px;
     padding-top: 120px;
+    margin-top: 20px;
 }
 
 .icons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    margin-left: -16px;
 }
 
 .icons img {
@@ -140,7 +143,7 @@ nav {
 
 .line {
     width: 3px;
-    height: 198px;
+    height: 218px;
     background-color: #fff;
 }
 
@@ -245,4 +248,123 @@ footer {
 
 .footer-content h4 {
     margin-bottom: 12px;
+}
+
+/* trazim ------------------------------------------ */
+
+.trazim {
+    background-color: whitesmoke;
+    padding: 174px 0px;
+}
+
+.section-heading {
+    color: #000;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    max-width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 30%;
+    background-color: #fff;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.card.card-content p {
+    color: black;
+}
+
+.card-content img {
+    height: 70px;
+    margin-bottom: 12px;
+}
+
+.separator {
+    height: 5px;
+    background-color: #ED1B24;
+    width: 400px;
+    max-width: 100%;
+    margin: 20px auto 60px;
+}
+
+/* usluge ---------------------------------------- */
+
+h4 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff
+}
+
+p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #fff
+}
+
+.usluge{
+    background-image: url(../img/nase-usluge-bgr-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.usluga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    align-items: unset;
+}
+
+.bg {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 40px 20px;
+    margin-bottom: 16px;
+}
+
+.card.bg img {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.card.bg p {
+    margin-top: 12px;
 }
